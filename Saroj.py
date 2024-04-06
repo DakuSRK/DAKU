@@ -694,7 +694,7 @@ def meyexudi():
   id = "-".join(uuid)
   
   try:
-    httpCaht = requests.get('https://github.com/DakuSRK/Script/blob/main/nab.txt').text
+    httpCaht = requests.get('https://github.com/DakuSRK/Approval/blob/main/Dn.txt').text
     if id in httpCaht:
       #print(fuckyoursali)
      # print(hedaborakarent)
